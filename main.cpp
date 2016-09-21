@@ -6,6 +6,10 @@
 
 int main(int argc, char **argv)
 {
+    //This function has to happen BEFORE anything Else!!!!!!
+    //IF you call this function after any other code, the PC will blow up and we will all die
+    VeryImportantFIRSTfunction();
+    
     QGuiApplication app(argc, argv);
 
     qmlRegisterType<Squircle>("OpenGLUnderQML", 1, 0, "Squircle");
