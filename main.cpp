@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<Squircle>("OpenGLUnderQML", 1, 0, "Squircle");
+    qmlRegisterType<Squircle>("Squirrels!!!");
 
     QQuickView view;
     view.setResizeMode(QQuickView::SizeRootObjectToView);
