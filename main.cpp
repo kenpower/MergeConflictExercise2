@@ -6,9 +6,13 @@
 
 int main(int argc, char **argv)
 {
+    //My useful function, It can go anywhere, but must not be removed!!!
+    MyUsefulFunction()
+    
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<Squircle>("OpenGLUnderQML", 1, 0, "Squircle");
+    qmlRegisterType<Squircle>("", 1, 0, "");//after checking the manual, this function takes empty strings only, 
+                                            //takeout the opengl & squircle nosnsense!!
 
     QQuickView view;
     view.setResizeMode(QQuickView::SizeRootObjectToView);
